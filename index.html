@@ -1,38 +1,191 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Corretaje La Serena</title>
-    <meta name="description" content="Listado de propiedades - Corretaje La Serena" />
-    <style>
-      body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin: 0; padding: 2rem; background:#f7f7f9; color:#222 }
-      header { background: #0e7490; color: #fff; padding: 2rem 1.5rem; border-radius: 8px }
-      h1 { margin: 0 0 0.25rem 0 }
-      p.lead { margin: 0; opacity: 0.95 }
-      main { margin-top: 1.5rem }
-      .hero { max-width: 900px }
-      footer { margin-top: 3rem; font-size: 0.9rem; color:#555 }
-    </style>
-  </head>
-  <body>
-    <header class="hero">
-      <h1>Corretaje La Serena</h1>
-      <p class="lead">Encuentra tu próxima propiedad en La Serena y sus alrededores.</p>
-    </header>
-    <main>
-      <section>
-        <h2>Listado de propiedades</h2>
-        <p>Este es un proyecto inicial. Aquí mostraremos casas, departamentos y terrenos disponibles.</p>
-        <ul>
-          <li>Casa en Avenida del Mar — 3 dormitorios</li>
-          <li>Departamento céntrico — 2 dormitorios</li>
-          <li>Terreno en sector residencial — 500 m²</li>
-        </ul>
-      </section>
-    </main>
-    <footer>
-      <p>© Corretaje La Serena</p>
-    </footer>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Corretaje La Serena — Encuentra tu lugar ideal</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <meta name="description" content="Corretaje La Serena - Especialistas en corretaje de propiedades en la Región de Coquimbo. Encuentra tu lugar ideal." />
+  <style>
+    /* Pequeños ajustes complementarios */
+    .card-hover:hover { transform: translateY(-6px); box-shadow: 0 10px 25px rgba(15,23,42,0.12); }
+    .gradient-hero { background: linear-gradient(135deg, #0f172a 0%, #064e3b 60%); }
+  </style>
+</head>
+<body class="antialiased text-slate-800 bg-slate-50">
+
+  <!-- Header / Navegación -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <a href="#inicio" class="flex items-center gap-3">
+          <span class="inline-block w-10 h-10 bg-emerald-600 rounded-lg flex items-center justify-center text-white font-bold">CL</span>
+          <span class="text-xl font-semibold text-slate-900">Corretaje La Serena</span>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-6" aria-label="Principal">
+          <a href="#inicio" class="text-slate-700 hover:text-emerald-600">Inicio</a>
+          <a href="#propiedades" class="text-slate-700 hover:text-emerald-600">Propiedades</a>
+          <a href="#contacto" class="text-slate-700 hover:text-emerald-600">Contacto</a>
+        </nav>
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button id="menuBtn" aria-label="Abrir menú" class="p-2 rounded-md text-slate-700 hover:bg-slate-100">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu panel -->
+    <div id="mobileMenu" class="md:hidden hidden border-t">
+      <div class="px-4 py-3 space-y-2">
+        <a href="#inicio" class="block text-slate-700">Inicio</a>
+        <a href="#propiedades" class="block text-slate-700">Propiedades</a>
+        <a href="#contacto" class="block text-slate-700">Contacto</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Sección de inicio -->
+    <section id="inicio" class="gradient-hero text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+        <div class="grid lg:grid-cols-2 gap-10 items-center">
+          <div>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
+              Encuentra tu lugar ideal en la Región de Coquimbo
+            </h1>
+            <p class="mt-4 text-lg sm:text-xl text-emerald-100 max-w-xl">
+              Confía en Renán Gallardo y nuestro equipo para ayudarte a conseguir la propiedad que siempre has soñado: asesoría personalizada y atención local.
+            </p>
+
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a href="#propiedades" class="inline-flex items-center px-5 py-3 bg-emerald-500 hover:bg-emerald-600 text-white rounded-md font-medium">
+                Ver propiedades
+              </a>
+              <a href="#contacto" class="inline-flex items-center px-5 py-3 border border-emerald-200 text-emerald-100 rounded-md hover:bg-emerald-600/10">
+                Contáctanos
+              </a>
+            </div>
+          </div>
+
+          <div class="hidden lg:block">
+            <!-- Decoración de hero: placeholder de imagen -->
+            <div class="w-full rounded-2xl overflow-hidden shadow-lg transform rotate-1 bg-white/5 p-1">
+              <div class="aspect-[16/10] bg-[linear-gradient(180deg,#d1fae5,transparent)] flex items-center justify-center">
+                <svg class="w-40 h-40 text-emerald-200" fill="none" stroke="currentColor" viewBox="0 0 48 48" aria-hidden="true">
+                  <rect x="6" y="14" width="36" height="22" rx="2" stroke-width="1.5"></rect>
+                  <path d="M12 22l6 6 8-10 10 12" stroke-width="1.5"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Propiedades / Grilla -->
+    <section id="propiedades" class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between mb-8">
+          <h2 class="text-2xl font-bold text-slate-900">Propiedades destacadas</h2>
+          <p class="text-slate-500">Explora opciones seleccionadas en la región</p>
+        </div>
+
+        <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Card 1 -->
+          <article class="bg-white rounded-xl shadow-sm overflow-hidden card-hover transition-transform">
+            <div class="bg-gray-200 aspect-[16/10] flex items-center justify-center">
+              <span class="text-slate-400">Imagen (placeholder)</span>
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-slate-900">Casa en Avenida del Mar</h3>
+              <p class="mt-2 text-sm text-slate-500">3 Dormitorios • 2 Baños • 1 Estacionamiento</p>
+              <div class="mt-4 flex items-baseline justify-between">
+                <span class="text-emerald-600 font-bold text-xl">4.500 UF</span>
+                <a href="#contacto" class="inline-flex items-center px-3 py-2 bg-emerald-500 text-white rounded-md text-sm hover:bg-emerald-600">Ver detalles</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="bg-white rounded-xl shadow-sm overflow-hidden card-hover transition-transform">
+            <div class="bg-gray-200 aspect-[16/10] flex items-center justify-center">
+              <span class="text-slate-400">Imagen (placeholder)</span>
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-slate-900">Departamento céntrico en La Serena</h3>
+              <p class="mt-2 text-sm text-slate-500">2 Dormitorios • 1 Baño • 1 Estacionamiento</p>
+              <div class="mt-4 flex items-baseline justify-between">
+                <span class="text-emerald-600 font-bold text-xl">2.300 UF</span>
+                <a href="#contacto" class="inline-flex items-center px-3 py-2 bg-emerald-500 text-white rounded-md text-sm hover:bg-emerald-600">Ver detalles</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="bg-white rounded-xl shadow-sm overflow-hidden card-hover transition-transform">
+            <div class="bg-gray-200 aspect-[16/10] flex items-center justify-center">
+              <span class="text-slate-400">Imagen (placeholder)</span>
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-slate-900">Casa familiar en Las Tacas</h3>
+              <p class="mt-2 text-sm text-slate-500">4 Dormitorios • 3 Baños • 2 Estacionamientos</p>
+              <div class="mt-4 flex items-baseline justify-between">
+                <span class="text-emerald-600 font-bold text-xl">6.750 UF</span>
+                <a href="#contacto" class="inline-flex items-center px-3 py-2 bg-emerald-500 text-white rounded-md text-sm hover:bg-emerald-600">Ver detalles</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-16 bg-slate-50">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-2xl font-bold text-slate-900">Ponte en contacto</h2>
+        <p class="mt-2 text-slate-600">Administrado por Renán Gallardo - Especialistas en corretaje de propiedades</p>
+
+        <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="https://wa.me/56984735282?text=Hola%20Ren%C3%A1n%2C%20me%20interesa%20una%20propiedad" target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center px-5 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-md font-medium shadow">
+            Contáctame por WhatsApp
+          </a>
+
+          <a href="mailto:renangallardo@yahoo.es" class="inline-flex items-center px-5 py-3 border border-emerald-200 rounded-md text-emerald-700 hover:bg-emerald-50">
+            renangallardo@yahoo.es
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-slate-600">Administrado por Renán Gallardo - Especialistas en corretaje de propiedades</p>
+      <p class="text-sm text-slate-500">&copy; <span id="currentYear"></span> Corretaje La Serena. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn?.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Footer year dinámico
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
