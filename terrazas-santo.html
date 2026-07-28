@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Departamento en Venta | Condominio Terrazas del Santo</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <meta name="description" content="Ficha de propiedad - Condominio Terrazas del Santo" />
+  <style>
+    /* Pequeños ajustes complementarios */
+    .card-hover:hover { transform: translateY(-6px); box-shadow: 0 10px 25px rgba(15,23,42,0.12); }
+    .gradient-hero { background: linear-gradient(135deg, #0f172a 0%, #064e3b 60%); }
+  </style>
+</head>
+<body class="antialiased text-slate-800 bg-slate-50">
+
+  <!-- Header / Navegación -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <a href="#inicio" class="flex items-center gap-3">
+          <span class="inline-block w-10 h-10 bg-emerald-600 rounded-lg flex items-center justify-center text-white font-bold">CL</span>
+          <span class="text-xl font-semibold text-slate-900">Corretaje La Serena</span>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-6" aria-label="Principal">
+          <a href="#inicio" class="text-slate-700 hover:text-emerald-600">Inicio</a>
+          <a href="#propiedades" class="text-slate-700 hover:text-emerald-600">Propiedades</a>
+          <a href="#contacto" class="text-slate-700 hover:text-emerald-600">Contacto</a>
+        </nav>
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button id="menuBtn" aria-label="Abrir menú" class="p-2 rounded-md text-slate-700 hover:bg-slate-100">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu panel -->
+    <div id="mobileMenu" class="md:hidden hidden border-t">
+      <div class="px-4 py-3 space-y-2">
+        <a href="#inicio" class="block text-slate-700">Inicio</a>
+        <a href="#propiedades" class="block text-slate-700">Propiedades</a>
+        <a href="#contacto" class="block text-slate-700">Contacto</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="py-12">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-xl shadow-sm overflow-hidden p-6">
+        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900">Departamento en Venta | Condominio Terrazas del Santo</h1>
+        <div class="mt-4 flex items-center gap-4">
+          <span class="text-emerald-600 font-bold text-2xl sm:text-3xl">$190.000.000</span>
+          <span class="text-sm text-slate-500">VENTA · 3 Dormitorios · 2 Baños</span>
+        </div>
+
+        <!-- Galería -->
+        <section class="mt-6">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+            <!-- Imagen principal grande -->
+            <div class="lg:col-span-2">
+              <div class="w-full rounded-lg overflow-hidden bg-gray-200 aspect-[16/10]">
+                <img src="terrazas-santo-portada.jpg" alt="Terrazas del Santo - Portada" class="w-full h-full object-cover">
+              </div>
+            </div>
+
+            <!-- Otras imágenes -->
+            <div class="grid grid-cols-2 gap-4">
+              <div class="rounded-lg overflow-hidden bg-gray-200 aspect-[4/3]"><img src="terrazas-2.jpeg" alt="Terrazas 2" class="w-full h-full object-cover"></div>
+              <div class="rounded-lg overflow-hidden bg-gray-200 aspect-[4/3]"><img src="terrazas-3.jpeg" alt="Terrazas 3" class="w-full h-full object-cover"></div>
+              <div class="rounded-lg overflow-hidden bg-gray-200 aspect-[4/3]"><img src="terrazas-4.jpeg" alt="Terrazas 4" class="w-full h-full object-cover"></div>
+              <div class="rounded-lg overflow-hidden bg-gray-200 aspect-[4/3]"><img src="terrazas-5.jpeg" alt="Terrazas 5" class="w-full h-full object-cover"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Descripción y características -->
+        <section class="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div class="lg:col-span-2">
+            <h2 class="text-lg font-semibold text-slate-900">Descripción</h2>
+            <p class="mt-2 text-slate-600">Se ofrece en venta un amplio y cómodo departamento ubicado en uno de los sectores residenciales más consolidados de La Serena, con excelente conectividad y cercanía a supermercados, colegios y centros de salud.</p>
+
+            <h3 class="mt-4 text-sm font-semibold text-slate-800">Características</h3>
+            <ul class="mt-2 list-disc list-inside text-slate-600">
+              <li>84,7 m² totales</li>
+              <li>73 m² habitables</li>
+              <li>Terraza de 11,7 m²</li>
+              <li>3 dormitorios</li>
+              <li>2 baños</li>
+              <li>Living-comedor</li>
+              <li>Cocina</li>
+              <li>Bodega</li>
+              <li>Estacionamiento techado</li>
+              <li>Estacionamiento exclusivo al aire libre</li>
+            </ul>
+          </div>
+
+          <aside class="bg-slate-50 p-4 rounded-lg">
+            <p class="text-sm text-slate-500">Precio referencia</p>
+            <p class="mt-2 text-emerald-600 font-bold text-xl">$190.000.000</p>
+
+            <div class="mt-4">
+              <a href="https://wa.me/56984735282?text=Hola%20Ren%C3%A1n%2C%20me%20interesa%20el%20Depto.%20Terrazas%20del%20Santo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 bg-emerald-600 text-white rounded-md">Contactar por WhatsApp</a>
+            </div>
+
+            <div class="mt-4 text-center">
+              <a href="index.html" class="text-sm text-emerald-600 hover:underline">Volver al listado</a>
+            </div>
+          </aside>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-slate-600">Administrado por Renán Gallardo - Especialistas en corretaje de propiedades</p>
+      <p class="text-sm text-slate-500">&copy; <span id="currentYear"></span> Corretaje La Serena. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn?.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Footer year dinámico
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
