@@ -18,29 +18,39 @@
 <body class="antialiased text-slate-800 bg-slate-50">
 
   <!-- Header / Navegación -->
-  <header class="bg-white shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center py-4">
-        <a href="#inicio" class="flex items-center" aria-label="Inicio — Corretaje La Serena">
-          <img src="logo.corredora.jpg" alt="Corretaje La Serena" class="w-12 h-12 rounded-full object-cover border border-emerald-100 shadow-sm" />
-        </a>
+<header class="bg-white shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center py-4">
+      <a href="#inicio" class="flex items-center" aria-label="Inicio — Corretaje La Serena">
+        <img src="logo.corredora.jpg" alt="Corretaje La Serena" class="w-12 h-12 rounded-full object-cover border border-emerald-100 shadow-sm" />
+      </a>
 
-        <nav class="hidden md:flex items-center gap-6" aria-label="Principal">
-          <a href="#inicio" class="text-slate-700 hover:text-emerald-600">Inicio</a>
-          <a href="#propiedades" class="text-slate-700 hover:text-emerald-600">Propiedades</a>
-          <a href="#contacto" class="text-slate-700 hover:text-emerald-600">Contacto</a>
-        </nav>
+      <nav class="hidden md:flex items-center gap-6" aria-label="Principal">
+        <a href="#inicio" class="text-slate-700 hover:text-emerald-600">Inicio</a>
+        <a href="#propiedades" class="text-slate-700 hover:text-emerald-600">Propiedades</a>
+        <a href="#contacto" class="text-slate-700 hover:text-emerald-600">Contacto</a>
+      </nav>
 
-        <!-- Mobile menu button -->
-        <div class="md:hidden">
-          <button id="menuBtn" aria-label="Abrir menú" class="p-2 rounded-md text-slate-700 hover:bg-slate-100">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
-            </svg>
-          </button>
-        </div>
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button id="menuBtn" aria-label="Abrir menú" class="p-2 rounded-md text-slate-700 hover:bg-slate-100">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
+          </svg>
+        </button>
       </div>
     </div>
+  </div>
+
+  <!-- Mobile menu panel -->
+  <div id="mobileMenu" class="md:hidden hidden border-t">
+    <div class="px-4 py-3 space-y-2">
+      <a href="#inicio" class="block text-slate-700">Inicio</a>
+      <a href="#propiedades" class="block text-slate-700">Propiedades</a>
+      <a href="#contacto" class="block text-slate-700">Contacto</a>
+    </div>
+  </div>
+</header>
 
     <!-- Mobile menu panel -->
     <div id="mobileMenu" class="md:hidden hidden border-t">
