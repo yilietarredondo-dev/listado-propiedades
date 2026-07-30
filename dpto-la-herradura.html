@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Departamento en Venta / Arriendo | Bahía La Herradura</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Detalle del departamento en Bahía La Herradura - Corretaje La Serena" />
+  <style>
+    .card-hover:hover { transform: translateY(-6px); box-shadow: 0 10px 25px rgba(15,23,42,0.12); }
+    .gallery-img { height: 220px; object-fit: cover; }
+  </style>
+</head>
+<body class="antialiased text-slate-800 bg-slate-50">
+  <!-- Header -->
+  <header class="bg-white shadow-sm border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <a href="index.html" class="text-xl font-bold text-slate-900 tracking-tight hover:text-emerald-600 transition-colors">Corretaje La Serena</a>
+        <nav class="hidden md:flex items-center gap-8" aria-label="Principal">
+          <a href="index.html#inicio" class="text-slate-700 hover:text-emerald-600 font-medium">Inicio</a>
+          <a href="index.html#propiedades" class="text-slate-700 hover:text-emerald-600 font-medium">Propiedades</a>
+          <a href="index.html#contacto" class="text-slate-700 hover:text-emerald-600 font-medium">Contacto</a>
+        </nav>
+        <div class="md:hidden">
+          <button id="menuBtn" aria-label="Abrir menú" class="p-2 rounded-md text-slate-700 hover:bg-slate-100">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-100">
+      <div class="px-4 py-3 space-y-2">
+        <a href="index.html#inicio" class="block text-slate-700 py-1">Inicio</a>
+        <a href="index.html#propiedades" class="block text-slate-700 py-1">Propiedades</a>
+        <a href="index.html#contacto" class="block text-slate-700 py-1">Contacto</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="py-12">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-xl shadow-sm p-6">
+        <div class="flex flex-col lg:flex-row gap-6">
+          <div class="flex-1">
+            <h1 class="text-2xl font-extrabold text-slate-900">Departamento en Venta / Arriendo | Bahía La Herradura</h1>
+            <p class="mt-2 text-sm text-slate-600">📍 Calle Darío Salas 1111, Torre Bahía Horizonte (Piso 14), Coquimbo</p>
+
+            <div class="mt-4">
+              <p class="text-emerald-600 font-bold text-xl">2.151 UF <small class="text-sm text-slate-500">| Arriendo: $421.000 / mes</small></p>
+            </div>
+
+            <div class="mt-4 text-sm text-slate-700">
+              <p><strong>Detalles:</strong> 38 m² • 1 dormitorio • 1 baño • 1 estacionamiento • living-comedor • cocina americana • balcón • conserjería 24/7.</p>
+            </div>
+
+            <div class="mt-6 flex gap-3">
+              <a href="https://wa.me/56984735282?text=Hola%20Ren%C3%A1n%2C%20me%20interesa%20el%20departamento%20en%20Bah%C3%ADa%20La%20Herradura" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-md font-medium shadow">Consultar por WhatsApp</a>
+              <a href="index.html" class="inline-flex items-center px-4 py-2 border border-emerald-200 rounded-md text-emerald-700 hover:bg-emerald-50">Volver a propiedades</a>
+            </div>
+
+          </div>
+
+          <div class="w-full lg:w-1/3">
+            <div class="bg-gray-100 rounded-lg p-3 text-sm text-slate-600">Contacto: Renán Gallardo<br/>Tel: +56 9 8473 5282<br/>renangallardo@yahoo.es</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Galería -->
+      <section class="mt-8">
+        <h2 class="text-lg font-semibold text-slate-900 mb-4">Galería de fotos</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <img src="dpto-la-herradura/PHOTO-2026-07-28-15-23-17.jpg" alt="Foto 1" class="w-full rounded-lg gallery-img" />
+          <img src="dpto-la-herradura/PHOTO-2026-07-28-15-23-17_1.jpg" alt="Foto 2" class="w-full rounded-lg gallery-img" />
+          <img src="dpto-la-herradura/PHOTO-2026-07-28-15-23-18.jpg" alt="Foto 3" class="w-full rounded-lg gallery-img" />
+          <img src="dpto-la-herradura/PHOTO-2026-07-28-15-23-18_1.jpg" alt="Foto 4" class="w-full rounded-lg gallery-img" />
+          <img src="dpto-la-herradura/PHOTO-2026-07-28-15-23-18_2.jpg" alt="Foto 5" class="w-full rounded-lg gallery-img" />
+          <img src="dpto-la-herradura/PHOTO-2026-07-28-15-23-18_3.jpg" alt="Foto 6" class="w-full rounded-lg gallery-img" />
+          <img src="dpto-la-herradura/PHOTO-2026-07-28-15-23-18_4.jpg" alt="Foto 7" class="w-full rounded-lg gallery-img" />
+          <img src="dpto-la-herradura/PHOTO-2026-07-28-15-23-19.jpg" alt="Foto 8" class="w-full rounded-lg gallery-img" />
+          <img src="dpto-la-herradura/PHOTO-2026-07-28-15-23-19_1.jpg" alt="Foto 9" class="w-full rounded-lg gallery-img" />
+          <img src="dpto-la-herradura/PHOTO-2026-07-28-15-23-19_2.jpg" alt="Foto 10" class="w-full rounded-lg gallery-img" />
+          <img src="dpto-la-herradura/PHOTO-2026-07-28-15-23-19_3.jpg" alt="Foto 11" class="w-full rounded-lg gallery-img" />
+          <img src="dpto-la-herradura/PHOTO-2026-07-28-15-23-20.jpg" alt="Foto 12" class="w-full rounded-lg gallery-img" />
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-slate-600">Administrado por Renán Gallardo - Especialistas en corretaje de propiedades</p>
+      <p class="text-sm text-slate-500">&copy; <span id="currentYear"></span> Corretaje La Serena. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn?.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Footer year dinámico
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
