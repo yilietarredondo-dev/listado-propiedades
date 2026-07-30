@@ -97,20 +97,29 @@
         </div>
 
         <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Card 1 -->
-          <article class="bg-white rounded-xl shadow-sm overflow-hidden card-hover transition-transform">
-            <div class="relative bg-gray-200 aspect-[16/10] overflow-hidden">
-              <img src="terrazas-santo-portada.jpg.jpeg" alt="Terrazas del Santo" class="w-full h-full object-cover" />
-
-              <!-- Badge -->
-              <span class="absolute top-3 left-3 bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full">VENTA</span>
+          <!-- Card 1 (reestructurada para coincidir con Dpto La Herradura) -->
+          <article class="property-card bg-white rounded-xl shadow-sm overflow-hidden card-hover transition-transform">
+            <div class="property-image relative bg-gray-200 aspect-[16/10] overflow-hidden">
+              <a href="terrazas-santo.html">
+                <img src="terrazas-santo-portada.jpg.jpeg" alt="Terrazas del Santo" class="w-full h-full object-cover" />
+              </a>
+              <span class="badge-status absolute top-3 left-3 bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full">VENTA</span>
             </div>
-            <div class="p-4">
-              <h3 class="text-lg font-semibold text-slate-900">Depto. en Venta | Condominio Terrazas del Santo</h3>
-              <p class="mt-2 text-sm text-slate-500">3 Dorm. • 2 Baños • 84,7 m² • 2 Estac.</p>
-              <div class="mt-4 flex items-baseline justify-between">
-                <span class="text-emerald-600 font-bold text-xl">$190.000.000</span>
-                <a href="terrazas-santo.html" class="inline-flex items-center px-3 py-2 bg-emerald-500 text-white rounded-md text-sm hover:bg-emerald-600">Ver detalles</a>
+            <div class="property-content p-4">
+              <span class="property-price text-emerald-600 font-bold text-xl">$190.000.000</span>
+              <h3 class="property-title mt-2 text-lg font-semibold text-slate-900">Depto. en Venta | Condominio Terrazas del Santo</h3>
+              <p class="property-location mt-2 text-sm text-slate-500">📍 Sector residencial consolidado, La Serena</p>
+              <div class="property-features mt-3 text-sm text-slate-700 flex gap-4">
+                <span>🛏️ 3 Dorm.</span>
+                <span>🚿 2 Baños</span>
+                <span>🚗 2 Estac.</span>
+                <span>📐 84,7 m²</span>
+              </div>
+
+              <p class="property-description mt-3 text-sm text-slate-500">Amplio departamento en condominio, cercano a servicios y con buena conectividad. Terraza y bodega incluida.</p>
+              <div class="property-footer mt-4 flex items-center justify-between">
+                <a href="https://wa.me/56984735282?text=Hola%20Ren%C3%A1n%2C%20me%20interesa%20el%20Depto.%20en%20Condominio%20Terrazas%20del%20Santo" class="btn-contact inline-flex items-center px-3 py-2 bg-emerald-500 text-white rounded-md text-sm hover:bg-emerald-600" target="_blank" rel="noopener noreferrer">Consultar a Renán</a>
+                <a href="terrazas-santo.html" class="inline-flex items-center px-3 py-2 border border-emerald-200 rounded-md text-emerald-700 hover:bg-emerald-50 text-sm">Ver detalles</a>
               </div>
             </div>
           </article>
