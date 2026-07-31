@@ -8,22 +8,14 @@
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Google Fonts: Plus Jakarta Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-
   <meta name="description" content="Corretaje La Serena - Especialistas en corretaje de propiedades en la Región de Coquimbo. Encuentra tu lugar ideal." />
   <style>
-    /* Tipografía global */
-    html, body { font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
-
     /* Pequeños ajustes complementarios */
     .card-hover:hover { transform: translateY(-6px); box-shadow: 0 10px 25px rgba(15,23,42,0.12); }
     .gradient-hero { background: linear-gradient(135deg, #0f172a 0%, #064e3b 60%); }
   </style>
 </head>
-<body class="antialiased text-slate-900 bg-[#FAF8F5]">
+<body class="antialiased text-slate-800 bg-slate-50">
 
   <!-- Header / Navegación (Sin logo) -->
 <header class="bg-white shadow-sm border-b border-slate-100">
@@ -87,9 +79,9 @@
           </div>
 
           <div class="hidden lg:flex justify-center">
-            <!-- Imagen de portada ligera y optimizada -->
+            <!-- Logo corporativo en el hero: reemplaza el placeholder SVG -->
             <div class="w-full max-w-[360px] rounded-2xl overflow-hidden shadow-lg transform rotate-1 bg-white/5 p-1">
-              <img src="images/portada.png" alt="Portada Corretaje La Serena" class="w-full h-auto object-contain bg-white p-6 rounded-xl" />
+              <img src="logo.jpg" alt="Logo Corretaje La Serena" class="w-full h-auto object-contain bg-white p-6 rounded-xl" />
             </div>
           </div>
         </div>
@@ -105,37 +97,37 @@
         </div>
 
         <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Card 1 (Terrazas del Santo) -->
-          <article class="property-card bg-[#0F172A] text-white rounded-2xl shadow-lg overflow-hidden card-hover transition-transform">
+          <!-- Card 1 (reestructurada para coincidir con Dpto La Herradura) -->
+          <article class="property-card bg-white rounded-xl shadow-sm overflow-hidden card-hover transition-transform">
             <div class="property-image relative bg-gray-200 aspect-[16/10] overflow-hidden">
               <a href="terrazas-santo.html">
-                <img src="images/terrazas-santo-portada.jpg" alt="Terrazas del Santo" class="w-full h-full object-cover" loading="lazy" />
+                <img src="terrazas-santo-portada.jpg.jpeg" alt="Terrazas del Santo" class="w-full h-full object-cover" />
               </a>
               <span class="badge-status absolute top-3 left-3 bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full">VENTA</span>
             </div>
             <div class="property-content p-4">
-              <span class="property-price font-bold text-xl text-amber-400">UF 4.651</span>
-              <h3 class="property-title mt-2 text-lg font-semibold text-slate-100">Depto. en Venta | Condominio Terrazas del Santo</h3>
-              <p class="property-location mt-2 text-sm text-slate-300">📍 Sector residencial consolidado, La Serena</p>
-              <div class="property-features mt-3 text-sm text-slate-200 flex gap-4">
+              <span class="property-price text-emerald-600 font-bold text-xl">$190.000.000</span>
+              <h3 class="property-title mt-2 text-lg font-semibold text-slate-900">Depto. en Venta | Condominio Terrazas del Santo</h3>
+              <p class="property-location mt-2 text-sm text-slate-500">📍 Sector residencial consolidado, La Serena</p>
+              <div class="property-features mt-3 text-sm text-slate-700 flex gap-4">
                 <span>🛏️ 3 Dorm.</span>
                 <span>🚿 2 Baños</span>
                 <span>🚗 2 Estac.</span>
                 <span>📐 84,7 m²</span>
               </div>
 
-              <p class="property-description mt-3 text-sm text-slate-300">Amplio departamento en condominio, cercano a servicios y con buena conectividad. Terraza y bodega incluida.</p>
+              <p class="property-description mt-3 text-sm text-slate-500">Amplio departamento en condominio, cercano a servicios y con buena conectividad. Terraza y bodega incluida.</p>
               <div class="property-footer mt-4 flex items-center justify-between">
-                <a href="https://wa.me/56984735282?text=Hola%20Ren%C3%A1n%2C%20me%20interesa%20el%20Depto.%20en%20Condominio%20Terrazas%20del%20Santo" class="btn-contact inline-flex items-center [...]">
+                <a href="https://wa.me/56984735282?text=Hola%20Ren%C3%A1n%2C%20me%20interesa%20el%20Depto.%20en%20Condominio%20Terrazas%20del%20Santo" class="btn-contact inline-flex items-center [...]
                 <a href="terrazas-santo.html" class="inline-flex items-center px-3 py-2 border border-emerald-200 rounded-md text-emerald-700 hover:bg-emerald-50 text-sm">Ver detalles</a>
               </div>
             </div>
           </article>
 
           <!-- Propiedad: Dpto Bahía La Herradura -->
-          <article class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover transition-transform">
+          <article class="bg-white rounded-xl shadow-sm overflow-hidden card-hover transition-transform">
             <div class="relative bg-gray-200 aspect-[16/10] overflow-hidden">
-              <img src="images/dpto-la-herradura/PHOTO-2026-07-28-15-23-17.jpg" alt="Departamento Bahía La Herradura" class="w-full h-full object-cover" loading="lazy" />
+              <img src="dpto-la-herradura/PHOTO-2026-07-28-15-23-17.jpg" alt="Departamento Bahía La Herradura" class="w-full h-full object-cover" />
               <span class="absolute top-3 left-3 bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full">Venta / Arriendo</span>
             </div>
             <div class="p-4">
@@ -153,7 +145,7 @@
                 Excelente departamento con vista panorámica al mar. Ubicación estratégica a 5 min del centro de Coquimbo, cercano a universidades, salud y comercios. Seguridad y conserjería 2[...]
               </p>
               <div class="mt-4 flex items-center justify-between">
-                <a href="https://wa.me/56984735282?text=Hola%20Ren%C3%A1n%2C%20me%20interesa%20el%20departamento%20en%20Bah%C3%ADa%20La%20Herradura" class="inline-flex items-center px-3 py-2 bg-e[...]" loading="lazy">
+                <a href="https://wa.me/56984735282?text=Hola%20Ren%C3%A1n%2C%20me%20interesa%20el%20departamento%20en%20Bah%C3%ADa%20La%20Herradura" class="inline-flex items-center px-3 py-2 bg-e[...]
                 <a href="dpto-la-herradura.html" class="inline-flex items-center px-3 py-2 border border-emerald-200 rounded-md text-emerald-700 hover:bg-emerald-50 text-sm">Ver detalles</a>
               </div>
             </div>
@@ -197,7 +189,7 @@
     </section>
 
     <!-- Contacto -->
-    <section id="contacto" class="py-16 bg-[#FAF8F5]">
+    <section id="contacto" class="py-16 bg-slate-50">
       <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-2xl font-bold text-slate-900">Ponte en contacto</h2>
         <p class="mt-2 text-slate-600">Administrado por Renán Gallardo - Especialistas en corretaje de propiedades</p>
