@@ -17,43 +17,43 @@
 </head>
 <body class="antialiased text-slate-800 bg-slate-50">
 
-  <!-- Header / Navegación (Sin logo) -->
-<header class="bg-white shadow-sm border-b border-slate-100">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between items-center py-4">
-      
-      <!-- Nombre de la marca en texto plano -->
-      <a href="#inicio" class="text-xl font-bold text-slate-900 tracking-tight hover:text-emerald-600 transition-colors">
-        Corretaje La Serena
-      </a>
+  <!-- Header / Navegación -->
+  <header class="bg-white shadow-sm border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        
+        <!-- Nombre de la marca -->
+        <a href="#inicio" class="text-xl font-bold text-slate-900 tracking-tight hover:text-emerald-600 transition-colors">
+          Corretaje La Serena
+        </a>
 
-      <!-- Menú principal -->
-      <nav class="hidden md:flex items-center gap-8" aria-label="Principal">
-        <a href="#inicio" class="text-slate-700 hover:text-emerald-600 font-medium transition-colors">Inicio</a>
-        <a href="#propiedades" class="text-slate-700 hover:text-emerald-600 font-medium transition-colors">Propiedades</a>
-        <a href="#contacto" class="text-slate-700 hover:text-emerald-600 font-medium transition-colors">Contacto</a>
-      </nav>
+        <!-- Menú principal -->
+        <nav class="hidden md:flex items-center gap-8" aria-label="Principal">
+          <a href="#inicio" class="text-slate-700 hover:text-emerald-600 font-medium transition-colors">Inicio</a>
+          <a href="#propiedades" class="text-slate-700 hover:text-emerald-600 font-medium transition-colors">Propiedades</a>
+          <a href="#contacto" class="text-slate-700 hover:text-emerald-600 font-medium transition-colors">Contacto</a>
+        </nav>
 
-      <!-- Botón menú móvil -->
-      <div class="md:hidden">
-        <button id="menuBtn" aria-label="Abrir menú" class="p-2 rounded-md text-slate-700 hover:bg-slate-100">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
-          </svg>
-        </button>
+        <!-- Botón menú móvil -->
+        <div class="md:hidden">
+          <button id="menuBtn" aria-label="Abrir menú" class="p-2 rounded-md text-slate-700 hover:bg-slate-100">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Desplegable Móvil -->
-  <div id="mobileMenu" class="md:hidden hidden border-t border-slate-100">
-    <div class="px-4 py-3 space-y-2">
-      <a href="#inicio" class="block text-slate-700 py-1">Inicio</a>
-      <a href="#propiedades" class="block text-slate-700 py-1">Propiedades</a>
-      <a href="#contacto" class="block text-slate-700 py-1">Contacto</a>
+    <!-- Desplegable Móvil -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-100">
+      <div class="px-4 py-3 space-y-2">
+        <a href="#inicio" class="block text-slate-700 py-1">Inicio</a>
+        <a href="#propiedades" class="block text-slate-700 py-1">Propiedades</a>
+        <a href="#contacto" class="block text-slate-700 py-1">Contacto</a>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
   <main>
     <!-- Hero / Sección de inicio -->
@@ -79,7 +79,6 @@
           </div>
 
           <div class="hidden lg:flex justify-center">
-            <!-- Logo corporativo en el hero: reemplaza el placeholder SVG -->
             <div class="w-full max-w-[360px] rounded-2xl overflow-hidden shadow-lg transform rotate-1 bg-white/5 p-1">
               <img src="logo.jpg" alt="Logo Corretaje La Serena" class="w-full h-auto object-contain bg-white p-6 rounded-xl" />
             </div>
@@ -97,7 +96,8 @@
         </div>
 
         <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Card 1 (reestructurada para coincidir con Dpto La Herradura) -->
+          
+          <!-- Card 1: Condominio Terrazas del Santo -->
           <article class="property-card bg-white rounded-xl shadow-sm overflow-hidden card-hover transition-transform">
             <div class="property-image relative bg-gray-200 aspect-[16/10] overflow-hidden">
               <a href="terrazas-santo.html">
@@ -107,7 +107,9 @@
             </div>
             <div class="property-content p-4">
               <span class="property-price text-emerald-600 font-bold text-xl">4.651 UF</span>
-              <h3 class="property-title mt-2 text-lg font-semibold text-slate-900">Depto. en Venta | Condominio Terrazas del Santo</h3>
+              <h3 class="property-title mt-2 text-lg font-semibold text-slate-900">
+                <a href="terrazas-santo.html" class="hover:text-emerald-600 transition-colors">Depto. en Venta | Condominio Terrazas del Santo</a>
+              </h3>
               <p class="property-location mt-2 text-sm text-slate-500">📍 Sector residencial consolidado, La Serena</p>
               <div class="property-features mt-3 text-sm text-slate-700 flex gap-4">
                 <span>🛏️ 3 Dorm.</span>
@@ -117,22 +119,31 @@
               </div>
 
               <p class="property-description mt-3 text-sm text-slate-500">Amplio departamento en condominio, cercano a servicios y con buena conectividad. Terraza y bodega incluida.</p>
+
               <div class="property-footer mt-4 flex items-center justify-between">
-                <a href="https://wa.me/56984735282?text=Hola%20Ren%C3%A1n%2C%20me%20interesa%20el%20Depto.%20en%20Condominio%20Terrazas%20del%20Santo" class="btn-contact inline-flex items-center [...]
-                <a href="terrazas-santo.html" class="inline-flex items-center px-3 py-2 border border-emerald-200 rounded-md text-emerald-700 hover:bg-emerald-50 text-sm">Ver detalles</a>
+                <a href="https://wa.me/56984735282?text=Hola%20Ren%C3%A1n%2C%20me%20interesa%20el%20Depto.%20en%20Condominio%20Terrazas%20del%20Santo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-2 bg-emerald-600 text-white rounded-md hover:bg-emerald-700 text-sm font-medium">
+                  WhatsApp
+                </a>
+                <a href="terrazas-santo.html" class="inline-flex items-center px-3 py-2 border border-emerald-200 rounded-md text-emerald-700 hover:bg-emerald-50 text-sm font-medium">
+                  Ver detalles
+                </a>
               </div>
             </div>
           </article>
 
-          <!-- Propiedad: Dpto Bahía La Herradura -->
+          <!-- Card 2: Dpto Bahía La Herradura -->
           <article class="bg-white rounded-xl shadow-sm overflow-hidden card-hover transition-transform">
             <div class="relative bg-gray-200 aspect-[16/10] overflow-hidden">
-              <img src="dpto-la-herradura/PHOTO-2026-07-28-15-23-17.jpg" alt="Departamento Bahía La Herradura" class="w-full h-full object-cover" />
+              <a href="dpto-la-herradura.html">
+                <img src="dpto-la-herradura/PHOTO-2026-07-28-15-23-17.jpg" alt="Departamento Bahía La Herradura" class="w-full h-full object-cover" />
+              </a>
               <span class="absolute top-3 left-3 bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full">Venta / Arriendo</span>
             </div>
             <div class="p-4">
               <span class="text-emerald-600 font-bold text-xl">2.151 UF <small class="text-sm text-slate-500">| $421.000 / mes</small></span>
-              <h3 class="mt-2 text-lg font-semibold text-slate-900">Departamento en Bahía La Herradura</h3>
+              <h3 class="mt-2 text-lg font-semibold text-slate-900">
+                <a href="dpto-la-herradura.html" class="hover:text-emerald-600 transition-colors">Departamento en Bahía La Herradura</a>
+              </h3>
               <p class="mt-2 text-sm text-slate-500">📍 Calle Darío Salas 1111, Torre Bahía Horizonte (Piso 14), Coquimbo</p>
               <div class="mt-3 text-sm text-slate-700 flex gap-4">
                 <span>🛏️ 1 Dorm.</span>
@@ -142,48 +153,20 @@
               </div>
 
               <p class="mt-3 text-sm text-slate-500">
-                Excelente departamento con vista panorámica al mar. Ubicación estratégica a 5 min del centro de Coquimbo, cercano a universidades, salud y comercios. Seguridad y conserjería 2[...]
+                Excelente departamento con vista panorámica al mar. Ubicación estratégica a 5 min del centro de Coquimbo, cercano a universidades, salud y comercios. Seguridad y conserjería 24/7.
               </p>
+
               <div class="mt-4 flex items-center justify-between">
-                <a href="https://wa.me/56984735282?text=Hola%20Ren%C3%A1n%2C%20me%20interesa%20el%20departamento%20en%20Bah%C3%ADa%20La%20Herradura" class="inline-flex items-center px-3 py-2 bg-e[...]
-                <a href="dpto-la-herradura.html" class="inline-flex items-center px-3 py-2 border border-emerald-200 rounded-md text-emerald-700 hover:bg-emerald-50 text-sm">Ver detalles</a>
+                <a href="https://wa.me/56984735282?text=Hola%20Ren%C3%A1n%2C%20me%20interesa%20el%20departamento%20en%20Bah%C3%ADa%20La%20Herradura" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-2 bg-emerald-600 text-white rounded-md hover:bg-emerald-700 text-sm font-medium">
+                  WhatsApp
+                </a>
+                <a href="dpto-la-herradura.html" class="inline-flex items-center px-3 py-2 border border-emerald-200 rounded-md text-emerald-700 hover:bg-emerald-50 text-sm font-medium">
+                  Ver detalles
+                </a>
               </div>
             </div>
           </article>
 
-          <!-- Card 2 - ejemplo ocultado -->
-          <!--
-          <article class="bg-white rounded-xl shadow-sm overflow-hidden card-hover transition-transform">
-            <div class="bg-gray-200 aspect-[16/10] flex items-center justify-center">
-              <span class="text-slate-400">Imagen (placeholder)</span>
-            </div>
-            <div class="p-4">
-              <h3 class="text-lg font-semibold text-slate-900">Departamento céntrico en La Serena</h3>
-              <p class="mt-2 text-sm text-slate-500">2 Dormitorios • 1 Baño • 1 Estacionamiento</p>
-              <div class="mt-4 flex items-baseline justify-between">
-                <span class="text-emerald-600 font-bold text-xl">2.300 UF</span>
-                <a href="#contacto" class="inline-flex items-center px-3 py-2 bg-emerald-500 text-white rounded-md text-sm hover:bg-emerald-600">Ver detalles</a>
-              </div>
-            </div>
-          </article>
-          -->
-
-          <!-- Card 3 - ejemplo ocultado -->
-          <!--
-          <article class="bg-white rounded-xl shadow-sm overflow-hidden card-hover transition-transform">
-            <div class="bg-gray-200 aspect-[16/10] flex items-center justify-center">
-              <span class="text-slate-400">Imagen (placeholder)</span>
-            </div>
-            <div class="p-4">
-              <h3 class="text-lg font-semibold text-slate-900">Casa familiar en Las Tacas</h3>
-              <p class="mt-2 text-sm text-slate-500">4 Dormitorios • 3 Baños • 2 Estacionamientos</p>
-              <div class="mt-4 flex items-baseline justify-between">
-                <span class="text-emerald-600 font-bold text-xl">6.750 UF</span>
-                <a href="#contacto" class="inline-flex items-center px-3 py-2 bg-emerald-500 text-white rounded-md text-sm hover:bg-emerald-600">Ver detalles</a>
-              </div>
-            </div>
-          </article>
-          -->
         </div>
       </div>
     </section>
