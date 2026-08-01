@@ -25,14 +25,14 @@
   <header class="bg-white shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center py-4">
-        <a href="#inicio" class="flex items-center gap-3">
+        <a href="index.html#inicio" class="flex items-center gap-3">
           <span class="inline-block w-10 h-10 bg-emerald-600 rounded-lg flex items-center justify-center text-white font-bold">CL</span>
           <span class="text-xl font-semibold text-slate-900">Corretaje La Serena</span>
         </a>
 
         <nav class="hidden md:flex items-center gap-6" aria-label="Principal">
-          <a href="#inicio" class="text-slate-700 hover:text-emerald-600">Inicio</a>
-          <a href="#propiedades" class="text-slate-700 hover:text-emerald-600">Propiedades</a>
+          <a href="index.html#inicio" class="text-slate-700 hover:text-emerald-600">Inicio</a>
+          <a href="index.html#propiedades" class="text-slate-700 hover:text-emerald-600">Propiedades</a>
           <a href="#contacto" class="text-slate-700 hover:text-emerald-600">Contacto</a>
         </nav>
 
@@ -50,8 +50,8 @@
     <!-- Mobile menu panel -->
     <div id="mobileMenu" class="md:hidden hidden border-t">
       <div class="px-4 py-3 space-y-2">
-        <a href="#inicio" class="block text-slate-700">Inicio</a>
-        <a href="#propiedades" class="block text-slate-700">Propiedades</a>
+        <a href="index.html#inicio" class="block text-slate-700">Inicio</a>
+        <a href="index.html#propiedades" class="block text-slate-700">Propiedades</a>
         <a href="#contacto" class="block text-slate-700">Contacto</a>
       </div>
     </div>
@@ -62,26 +62,34 @@
       <div class="bg-white rounded-2xl shadow-lg overflow-hidden p-6 card-hover">
         <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900">Departamento en Venta | Condominio Terrazas del Santo</h1>
         <div class="mt-4 flex items-center gap-4">
-          <span class="text-emerald-600 font-bold text-2xl sm:text-3xl text-amber-400">UF 4.651</span>
+          <span class="text-emerald-600 font-bold text-2xl sm:text-3xl">UF 4.651</span>
           <span class="text-sm text-slate-500">VENTA · 3 Dormitorios · 2 Baños</span>
         </div>
 
-        <!-- Galería -->
+        <!-- Galería de imágenes corregida -->
         <section class="mt-6">
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-            <!-- Imagen principal grande (no lazy para LCP) -->
+            <!-- Imagen principal grande -->
             <div class="lg:col-span-2">
               <div class="w-full rounded-2xl overflow-hidden bg-gray-200 aspect-[16/10]">
-                <img src="images/terrazas-santo-portada.jpg" alt="Terrazas del Santo - Portada" class="w-full h-full object-cover">
+                <img src="terrazas-santo-portada.jpg.jpeg" alt="Terrazas del Santo - Portada" class="w-full h-full object-cover">
               </div>
             </div>
 
             <!-- Otras imágenes -->
             <div class="grid grid-cols-2 gap-4">
-              <div class="rounded-xl overflow-hidden bg-gray-200 aspect-[4/3]"><img src="images/terrazas-2.jpg" alt="Terrazas 2" class="w-full h-full object-cover" loading="lazy"></div>
-              <div class="rounded-xl overflow-hidden bg-gray-200 aspect-[4/3]"><img src="images/terrazas-3.jpg" alt="Terrazas 3" class="w-full h-full object-cover" loading="lazy"></div>
-              <div class="rounded-xl overflow-hidden bg-gray-200 aspect-[4/3]"><img src="images/terrazas-4.jpg" alt="Terrazas 4" class="w-full h-full object-cover" loading="lazy"></div>
-              <div class="rounded-xl overflow-hidden bg-gray-200 aspect-[4/3]"><img src="images/terrazas-5.jpg" alt="Terrazas 5" class="w-full h-full object-cover" loading="lazy"></div>
+              <div class="rounded-xl overflow-hidden bg-gray-200 aspect-[4/3]">
+                <img src="terrazas-2.jpeg.jpeg" alt="Terrazas 2" class="w-full h-full object-cover" loading="lazy">
+              </div>
+              <div class="rounded-xl overflow-hidden bg-gray-200 aspect-[4/3]">
+                <img src="terrazas-3.jpeg.jpeg" alt="Terrazas 3" class="w-full h-full object-cover" loading="lazy">
+              </div>
+              <div class="rounded-xl overflow-hidden bg-gray-200 aspect-[4/3]">
+                <img src="terrazas-4.jpeg.jpeg" alt="Terrazas 4" class="w-full h-full object-cover" loading="lazy">
+              </div>
+              <div class="rounded-xl overflow-hidden bg-gray-200 aspect-[4/3]">
+                <img src="terrazas-5.jpeg.jpeg" alt="Terrazas 5" class="w-full h-full object-cover" loading="lazy">
+              </div>
             </div>
           </div>
         </section>
@@ -90,7 +98,7 @@
         <section class="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
           <div class="lg:col-span-2">
             <h2 class="text-lg font-semibold text-slate-900">Descripción</h2>
-            <p class="mt-2 text-slate-600">Se ofrece en venta un amplio y cómodo departamento ubicado en uno de los sectores residenciales más consolidados de La Serena, con excelente conectivid[...]
+            <p class="mt-2 text-slate-600">Se ofrece en venta un amplio y cómodo departamento ubicado en uno de los sectores residenciales más consolidados de La Serena, con excelente conectividad y cercanía a servicios esenciales, colegios y comercio.</p>
 
             <h3 class="mt-4 text-sm font-semibold text-slate-800">Características</h3>
             <ul class="mt-2 list-disc list-inside text-slate-600">
@@ -107,16 +115,16 @@
             </ul>
           </div>
 
-          <aside class="bg-white p-4 rounded-2xl shadow-md">
+          <aside id="contacto" class="bg-white p-4 rounded-2xl shadow-md border border-slate-100">
             <p class="text-sm text-slate-500">Precio referencia</p>
-            <p class="mt-2 text-amber-400 font-bold text-xl">UF 4.651</p>
+            <p class="mt-2 text-emerald-600 font-bold text-xl">UF 4.651</p>
 
             <div class="mt-4">
-              <a href="https://wa.me/56984735282?text=Hola%20Ren%C3%A1n%2C%20me%20interesa%20el%20Depto.%20Terrazas%20del%20Santo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-md font-medium shadow">Contactar por WhatsApp</a>
+              <a href="https://wa.me/56984735282?text=Hola%20Ren%C3%A1n%2C%20me%20interesa%20el%20Depto.%20Terrazas%20del%20Santo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-md font-medium shadow transition-colors">Contactar por WhatsApp</a>
             </div>
 
             <div class="mt-4 text-center">
-              <a href="index.html" class="text-sm text-emerald-600 hover:underline">Volver al listado</a>
+              <a href="index.html" class="text-sm text-emerald-600 hover:underline">← Volver al listado</a>
             </div>
           </aside>
         </section>
@@ -126,7 +134,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-white border-t">
+  <footer class="bg-white border-t mt-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
       <p class="text-sm text-slate-600">Administrado por Renán Gallardo - Especialistas en corretaje de propiedades</p>
       <p class="text-sm text-slate-500">&copy; <span id="currentYear"></span> Corretaje La Serena. Todos los derechos reservados.</p>
